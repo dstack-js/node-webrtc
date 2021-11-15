@@ -168,6 +168,7 @@ endif()
 if (WIN32)
   list(APPEND GN_GEN_ARGS is_clang=false)
 endif()
+  list(APPEND GN_GEN_ARGS is_clang=false treat_warnings_as_errors=false use_custom_libcxx=false)
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
   list(APPEND GN_GEN_ARGS is_debug=true)
 else()
@@ -383,29 +384,29 @@ else()
   #   https://gitlab.kitware.com/cmake/cmake/issues/15052
   #
   # is to include all the header files here.
-  target_include_directories(${MODULE} SYSTEM PRIVATE
-    ${libc++_include_dir}
-    ${libc++abi_include_dir}
-  )
+  #target_include_directories(${MODULE} SYSTEM PRIVATE
+  #  ${libc++_include_dir}
+  #  ${libc++abi_include_dir}
+  #)
 
   # NOTE(mroberts): On Linux and macOS, we statically link the same libc++ and
   # libc++abi libraries that libwebrtc builds against.
   target_link_libraries(${MODULE} PRIVATE
     -lc
     -lm
-    libc++
+    #libc++
   )
   if(NOT APPLE)
     target_link_libraries(${MODULE} PRIVATE
-      libc++abi
+        #libc++abi
     )
   endif()
 
   target_compile_options(${MODULE} PRIVATE
     -fno-rtti
     -fvisibility=hidden
-    -nostdinc++
-    -nodefaultlibs
+    #-nostdinc++
+    #-nodefaultlibs
     -Wall
     -Wextra
     -Wno-missing-field-initializers
@@ -415,6 +416,9 @@ else()
     -Wno-suggest-override
     -Wpedantic
   )
+  target_link_options(${MODULE} PRIVATE
+      -static-libstdc++
+      )
   if(APPLE)  # actually should be if(clang), but there is no such flag
     target_compile_options(${MODULE} PRIVATE
       -Wno-missing-prototypes
