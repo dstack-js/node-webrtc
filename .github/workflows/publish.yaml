@@ -1,6 +1,9 @@
 name: Publish Binary to S3
 on:
   push:
+    branches:
+      - "port/macos-arm64"
+      - "master"
   release:
     types: [created]
 
@@ -26,4 +29,5 @@ jobs:
         with:
           node-version: 'lts/*'
       - run: yarn install
+      - run: yarn node-pre-gyp unpublish
       - run: yarn publish-binary
