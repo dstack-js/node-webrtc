@@ -3,9 +3,9 @@
   <img height="120px" src="https://webrtc.github.io/webrtc-org/assets/images/webrtc-logo-vert-retro-dist.svg" />
 </h1>
 
-[![NPM](https://img.shields.io/npm/v/wrtc.svg)](https://www.npmjs.com/package/wrtc) [![macOS/Linux Build Status](https://circleci.com/gh/node-webrtc/node-webrtc/tree/develop.svg?style=shield)](https://circleci.com/gh/node-webrtc/node-webrtc) [![Windows Build status](https://ci.appveyor.com/api/projects/status/iulc84we28o1i7b9?svg=true)](https://ci.appveyor.com/project/markandrus/node-webrtc-7bnua)
+[![NPM](https://img.shields.io/npm/v/@dstack-js/wrtc.svg)](https://www.npmjs.com/package/@dstack-js/wrtc)
 
-node-webrtc is a Node.js Native Addon that provides bindings to [WebRTC M87](https://chromium.googlesource.com/external/webrtc/+/branch-heads/4280). This project aims for spec-compliance and is tested using the W3C's [web-platform-tests](https://github.com/web-platform-tests/wpt) project. A number of [nonstandard APIs](docs/nonstandard-apis.md) for testing are also included.
+@dstack-js/wrtc is a Node.js Native Addon that provides bindings to [WebRTC M87](https://chromium.googlesource.com/external/webrtc/+/branch-heads/4280). This project aims for spec-compliance and is tested using the W3C's [web-platform-tests](https://github.com/web-platform-tests/wpt) project. A number of [nonstandard APIs](docs/nonstandard-apis.md) for testing are also included. Forked from <https://github.com/corwin-of-amber/node-webrtc> to provide pre-built macOS M1 binaries.
 
 Install
 -------
@@ -28,7 +28,7 @@ The following platforms are confirmed to work with node-webrtc and have prebuilt
     <tr>
       <td colspan="2" rowspan="2"></td>
       <th colspan="3">Linux</th>
-      <th>macOS</th>
+      <th colspan="2">macOS</th>
       <th>Windows</th>
     </tr>
     <tr>
@@ -36,6 +36,7 @@ The following platforms are confirmed to work with node-webrtc and have prebuilt
       <th>arm64</th>
       <th>x64</th>
       <th>x64</th>
+      <th>arm64</th>
       <th>x64</th>
     </tr>
   </thead>
@@ -48,12 +49,14 @@ The following platforms are confirmed to work with node-webrtc and have prebuilt
         <td align="center">✓</td>
       <td align="center">✓</td>
       <td align="center">✓</td>
+      <td align="center">✓</td>
     </tr>
     <tr>
       <th>10</th>
         <td align="center">✓</td>
         <td align="center">✓</td>
         <td align="center">✓</td>
+      <td align="center">✓</td>
       <td align="center">✓</td>
       <td align="center">✓</td>
     </tr>
@@ -64,12 +67,14 @@ The following platforms are confirmed to work with node-webrtc and have prebuilt
         <td align="center">✓</td>
       <td align="center">✓</td>
       <td align="center">✓</td>
+      <td align="center">✓</td>
     </tr>
     <tr>
       <th>12</th>
         <td align="center">✓</td>
         <td align="center">✓</td>
         <td align="center">✓</td>
+      <td align="center">✓</td>
       <td align="center">✓</td>
       <td align="center">✓</td>
     </tr>
@@ -80,12 +85,14 @@ The following platforms are confirmed to work with node-webrtc and have prebuilt
         <td align="center">✓</td>
       <td align="center">✓</td>
       <td align="center">✓</td>
+      <td align="center">✓</td>
     </tr>
     <tr>
       <th>14</th>
         <td align="center">✓</td>
         <td align="center">✓</td>
         <td align="center">✓</td>
+      <td align="center">✓</td>
       <td align="center">✓</td>
       <td align="center">✓</td>
     </tr>
@@ -97,12 +104,14 @@ The following platforms are confirmed to work with node-webrtc and have prebuilt
         <td align="center">✓</td>
       <td align="center">✓</td>
       <td align="center">✓</td>
+      <td align="center">✓</td>
     </tr>
     <tr>
       <th>5</th>
         <td align="center"></td>
         <td align="center"></td>
         <td align="center">✓</td>
+      <td align="center">✓</td>
       <td align="center">✓</td>
       <td align="center">✓</td>
     </tr>
@@ -112,9 +121,9 @@ The following platforms are confirmed to work with node-webrtc and have prebuilt
 Examples
 --------
 
-See [node-webrtc/node-webrtc-examples](https://github.com/node-webrtc/node-webrtc-examples).
+See [node-webrtc/node-webrtc-examples](https://github.com/dstack-js/node-webrtc-examples).
 
 Contributing
 ------------
 
-Contributions welcome! Please refer to the [wiki](https://github.com/node-webrtc/node-webrtc/wiki/Contributing).
+Contributions welcome! Please refer to the [wiki](https://github.com/dstack-js/node-webrtc/wiki/Contributing).

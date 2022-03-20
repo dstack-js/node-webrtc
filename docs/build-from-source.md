@@ -23,7 +23,7 @@ variable to "arm" or "arm64" to build for armv7l or arm64, respectively. Linux
 and macOS users can also set the `DEBUG` environment variable for debug builds.
 
 ```
-git clone https://github.com/node-webrtc/node-webrtc.git
+git clone https://github.com/dstack-js/node-webrtc.git
 cd node-webrtc
 SKIP_DOWNLOAD=true npm install
 ```

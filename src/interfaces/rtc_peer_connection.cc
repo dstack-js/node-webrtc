@@ -135,7 +135,7 @@ void RTCPeerConnection::OnIceCandidate(const webrtc::IceCandidateInterface* ice_
 
   std::string sdp;
   if (!ice_candidate->ToString(&sdp)) {
-    error = "Failed to print the candidate string. This is pretty weird. File a bug on https://github.com/node-webrtc/node-webrtc";
+    error = "Failed to print the candidate string. This is pretty weird. File a bug on https://github.com/dstack-js/node-webrtc";
     return;
   }
 

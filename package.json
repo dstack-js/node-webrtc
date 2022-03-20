@@ -1,5 +1,5 @@
 {
-  "name": "wrtc",
+  "name": "@dstack-js/wrtc",
   "private": true,
   "description": "Standards-compliant WebRTC implementation for Node",
   "keywords": [
@@ -9,8 +9,8 @@
   ],
   "version": "0.4.7-dev",
   "author": "Alan K <ack@modeswitch.org> (http://blog.modeswitch.org)",
-  "homepage": "https://github.com/node-webrtc/node-webrtc",
-  "bugs": "https://github.com/node-webrtc/node-webrtc/issues",
+  "homepage": "https://github.com/dstack-js/node-webrtc",
+  "bugs": "https://github.com/dstack-js/node-webrtc/issues",
   "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "module_path": "./build/{configuration}/",
     "remote_path": "./{module_name}/v{version}/{configuration}/",
     "package_name": "{platform}-{arch}.tar.gz",
-    "host": "https://node-webrtc.s3.amazonaws.com"
+    "host": "https://dstack-webrtc.s3.amazonaws.com"
   },
   "engines": {
     "node": "^8.11.2 || >=10.0.0"
