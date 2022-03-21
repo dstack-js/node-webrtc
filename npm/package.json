@@ -1,4 +1,11 @@
 {
+  "binary": {
+    "host": "https://dstack-webrtc.s3.amazonaws.com",
+    "module_name": "wrtc",
+    "module_path": "./build/{configuration}/",
+    "package_name": "{platform}-{arch}.tar.gz",
+    "remote_path": "./{module_name}/v{version}/{configuration}/"
+  },
   "dependencies": {
     "node-pre-gyp": "^0.13.0"
   },
