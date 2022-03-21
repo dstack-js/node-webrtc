@@ -14,7 +14,7 @@
   "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
-    "url": "http://github.com/node-webrtc/node-webrtc.git"
+    "url": "http://github.com/dstack-js/node-webrtc.git"
   },
   "main": "lib/index.js",
   "browser": "lib/browser.js",

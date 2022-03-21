@@ -85,7 +85,7 @@ async function main() {
     readme
   );
 
-  const { status } = spawnSync('npm', ['publish'], {
+  const { status } = spawnSync('npm', ['publish', '--access', 'public'], {
     shell: true,
     stdio: 'inherit',
     cwd: tmpDir

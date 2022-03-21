@@ -11,7 +11,7 @@ Install
 -------
 
 ```
-npm install wrtc
+npm install @dstack-js/wrtc
 ```
 
 Installing from NPM downloads a prebuilt binary for your operating system × architecture. Set the `TARGET_ARCH` environment variable to "arm" or "arm64" to download for armv7l or arm64, respectively. Linux and macOS users can also set the `DEBUG` environment variable to download debug builds.
